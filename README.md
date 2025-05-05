@@ -7,7 +7,7 @@
 ## General info
 Website of hotel.
 <br>
-![image](![alt text](main_page.png))
+![alt text](main_page.png)
 	
 ## Technologies
 Project is created with:
@@ -26,13 +26,13 @@ Project is created with:
    ```
    * Activate on:
      - Windows:
-     ```
-     .\venv\Scripts\activate
-     ```
-     -Linux/MacOS:
-     ```
-     source venv/bin/activate
-     ```
+	     ```
+	     .\venv\Scripts\activate
+	     ```
+     - Linux/MacOS:
+	     ```
+	     source venv/bin/activate
+	     ```
 3. Install dependencies:
    In project folder:
    ```
