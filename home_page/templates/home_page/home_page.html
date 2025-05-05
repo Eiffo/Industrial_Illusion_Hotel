@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home_page/css/home_page.css' %}">
+{% endblock %}
+
+{% block content %}
+<header class="hero">
+    <div class="overlay">
+        <h1>Witamy w Hotelu Industrial Illusion</h1>
+        <p>Twój idealny wypoczynek zaczyna się tutaj</p>
+        <a href="reservation" class="btn">Zarezerwuj teraz</a>
+    </div>
+</header>
+
+<section class="section" id="rooms">
+    <h2>Nasze Pokoje</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Pokój Standardowy</h3>
+            <p>Idealny dla jednej osoby lub pary.</p>
+        </div>
+        <div class="card">
+            <h3>Pokój Deluxe</h3>
+            <p>Więcej przestrzeni, piękny widok.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <h2>Usługi</h2>
+    <ul class="services-list">
+        <li>Spa & Wellness</li>
+        <li>Śniadania w cenie</li>
+        <li>Całodobowa recepcja</li>
+        <li>Transport z lotniska</li>
+    </ul>
+</section>
+
+<section class="section" id="reviews">
+    <h2>Opinie Gości</h2>
+    <blockquote>
+        <p>„Wspaniała obsługa i piękne wnętrza. Na pewno wrócimy!”</p>
+        <cite>– Anna, Warszawa</cite>
+    </blockquote>
+</section>
+
+{% endblock %}

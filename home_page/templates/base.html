@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Industrial Illusion Hotel{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'home_page/css/style.css' %}">
+    {% block extra_css %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{% static 'home_page/img/favicon.ico' %}" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="{% url 'home_page' %}" class="logo">Industrial Illusion</a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home_page' %}">Strona główna</a></li>
+                <li><a href="{% url 'reservation' %}">Rezerwacja</a></li>
+                <li><a href="#">Pokoje</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Zawartość konkretnej strony -->
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Hotel Industrial Illusion. Wszelkie prawa zastrzeżone.</p>
+        <p><a href="/kontakt/">Skontaktuj się z nami</a></p>
+    </footer>
+
+</body>
+
+</html>
