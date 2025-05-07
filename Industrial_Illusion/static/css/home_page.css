@@ -1,5 +1,5 @@
 .hero {
-    background: url('/static/home_page/img/hero.png') no-repeat center center/cover;
+    background: url('/static/img/hero.png') no-repeat center center/cover;
     height: 100vh;
     position: relative;
     color: white;

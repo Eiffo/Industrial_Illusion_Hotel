@@ -2,12 +2,12 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'reservation/css/reservation.css' %}" />
+<link rel="stylesheet" href="{% static 'css/reservation.css' %}" />
 {% endblock %}
 
 {% block content %}
 <div class="container">
-    <h1>Rezerwuj swój pobyt</h1>
+    <h1>Rezerwuj swój pobyt - W trakcie tworzenia</h1>
     <form action="#" method="post">
         {% csrf_token %}
         <label for="name">Imię i nazwisko:</label>
@@ -27,6 +27,7 @@
             <option value="standard">Pokój Standardowy</option>
             <option value="deluxe">Pokój Deluxe</option>
             <option value="suite">Apartament</option>
+            <option value="penthouse">Penthouse</option>
         </select>
 
         <label for="requests">Dodatkowe życzenia:</label>
