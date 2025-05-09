@@ -56,3 +56,9 @@
     cursor: pointer;
     font-size: 1rem;
 }
+
+.success {
+    color: greenyellow;
+    font-weight: bold;
+    margin-top: 10px;
+}

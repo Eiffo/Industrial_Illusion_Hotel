@@ -6,5 +6,34 @@
 {% endblock %}
 
 {% block content %}
-<h1>W trakcie prac</h1>
+<section class="rooms-section">
+    <h2>Nasze pokoje</h2>
+    <p>Wybierz idealny pokój dopasowany do Twoich potrzeb.</p>
+
+    <div class="room-cards">
+        <div class="room-card">
+            <img src="{% static 'img/standard_room.jpg' %}" alt="Pokój standardowy">
+            <h3>Pokój Standardowy</h3>
+            <p>Komfortowe wyposażenie, idealny dla jednej lub dwóch osób.</p>
+        </div>
+
+        <div class="room-card">
+            <img src="{% static 'img/deluxe_room.jpg' %}" alt="Pokój deluxe">
+            <h3>Pokój Deluxe</h3>
+            <p>Więcej przestrzeni i udogodnień — dla gości ceniących wygodę.</p>
+        </div>
+
+        <div class="room-card">
+            <img src="{% static 'img/suite_room.jpg' %}" alt="Apartament">
+            <h3>Apartament</h3>
+            <p>Luksusowe wnętrza i oddzielna strefa wypoczynkowa.</p>
+        </div>
+
+        <div class="room-card">
+            <img src="{% static 'img/penthouse_room1.jpg' %}" alt="Penthouse">
+            <h3>Penthouse</h3>
+            <p>Najwyższy standard, ogromna przestrzeń i wiele atrakcji.</p>
+        </div>
+    </div>
+</section>
 {% endblock %}

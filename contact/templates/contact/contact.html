@@ -27,6 +27,15 @@
                 <p><strong>Email:</strong> kontakt@industrialillusion.pl</p>
             </div>
         </div>
+
+        {% if messages %}
+        {% for message in messages %}
+        <p class="success">{{ message }}</p>
+        {% endfor %}
+        {% endif %}
+
     </div>
 </section>
+
+
 {% endblock %}
