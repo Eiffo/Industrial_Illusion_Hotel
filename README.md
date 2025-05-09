@@ -5,14 +5,18 @@
 * [Todo](#todo)
 
 ## General info
-Website of hotel.
+Industrial Illusion Hotel Main Page
 <br>
-![alt text](main_page.png)
+<br>
+![alt text](https://github.com/Eiffo/Industrial_Illusion_Hotel/blob/main/Industrial_Illusion/static/img/main_page.png)
 	
 ## Technologies
 Project is created with:
 * Python version: 3.13.3
 * Django version: 5.1.8
+* SQLite 3.49.2
+* HTML5 + CSS3
+
 	
 ## Setup
 1. **Clone the repository** to your local environment:
@@ -40,14 +44,14 @@ Project is created with:
    ```
 4. Add .env file with:
    ```
-   SECRET_KEY="here_place_you_secret_key"
+   SECRET_KEY="your_secret_key_here"
    DEBUG=True
    ```
-   To get you SECRET_KEY run this command:
+   To generate your SECRET_KEY run this command:
    ```bash
    python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
    ```
-4. Start project local:
+4. Start project locally:
    ```
    python manage.py runserver
    ```
@@ -55,25 +59,25 @@ Project is created with:
 
 
 ## Todo
-- Home Page
-    - Language selection
+- [ ] Home Page:
+    - [ ] Language selection: 
         Choose between English and Polish.
 
     Pages:
-    - Rooms (Room presentation)
+    - [ ] Rooms (Room presentation): 
         List of rooms with description, price.
-    - Reservation (Implement online reservation system)
+    - [ ] Reservation (Implement online reservation system): 
         Integration with payment system module.
-    - Information (Hotel information)
+    - [ ] Information (Hotel information): 
         Localization of hotel, history, contact.
-    - Reviews (Opinions)
+    - [ ] Reviews (Optional): 
         Guest reviews (To add a review, a reservation must be made first. You will need to provide your name and reservation number).
-    - Services (Optional for later)
+    - [ ] Services (Optional for later): 
         Additional services like spa or restaurant.
 
-- Add payment system
+- [ ] Add payment system: 
     Implement payment system - maybe create bank system, and connect between them.
-- Admin (Admin panel)
+- [ ] Admin (Admin panel): 
     Admin panel for managing reservations and content.
-- Security (for later)
+- [ ] Security (for later): 
     Improve security.
