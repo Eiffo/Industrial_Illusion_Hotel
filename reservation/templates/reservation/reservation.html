@@ -7,34 +7,65 @@
 
 {% block content %}
 <div class="container">
-    <h1>Rezerwuj swój pobyt - W trakcie tworzenia</h1>
-    <form action="#" method="post">
+    <h1>Rezerwuj swój pobyt</h1>
+    <form method="post">
         {% csrf_token %}
-        <label for="name">Imię i nazwisko:</label>
-        <input type="text" id="name" name="name" required />
+        <label for="name_surname">Imię i nazwisko:</label>
+        <input type="text" name="name_surname" required />
+        {% if form.name_surname.errors %}
+        <div class="error">
+            {{ form.name_surname.errors.0 }}
+        </div>
+        {% endif %}
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" name="email" required />
+        {% if form.email.errors %}
+        <div class="error">
+            {{ form.email.errors.0 }}
+        </div>
+        {% endif %}
 
-        <label for="checkin">Data przyjazdu:</label>
-        <input type="date" id="checkin" name="checkin" required />
+        <label for="arrival_date">Data przyjazdu:</label>
+        <input type="date" name="arrival_date" required />
+        {% if form.arrival_date.errors %}
+        <div class="error">
+            {{ form.arrival_date.errors.0 }}
+        </div>
+        {% endif %}
 
-        <label for="checkout">Data wyjazdu:</label>
-        <input type="date" id="checkout" name="checkout" required />
+        <label for="departure_date">Data wyjazdu:</label>
+        <input type="date" name="departure_date" required />
+        {% if form.departure_date.errors %}
+        <div class="error">
+            {{ form.departure_date.errors.0 }}
+        </div>
+        {% endif %}
 
-        <label for="room">Rodzaj pokoju:</label>
-        <select id="room" name="room">
+        <label for="room_type">Rodzaj pokoju:</label>
+        <select name="room_type">
             <option value="standard">Pokój Standardowy</option>
             <option value="deluxe">Pokój Deluxe</option>
             <option value="suite">Apartament</option>
             <option value="penthouse">Penthouse</option>
         </select>
 
-        <label for="requests">Dodatkowe życzenia:</label>
-        <textarea id="requests" name="requests" rows="4"></textarea>
+        <label for="additional_wishes">Dodatkowe życzenia:</label>
+        <textarea name="additional_wishes" rows="10"></textarea>
+        {% if form.additional_wishes.errors %}
+        <div class="error">
+            {{ form.additional_wishes.errors.0 }}
+        </div>
+        {% endif %}
 
         <button type="submit">Zarezerwuj</button>
     </form>
+    {% if messages %}
+    {% for message in messages %}
+    <p class="success">{{ message }}</p>
+    {% endfor %}
+    {% endif %}
+
 </div>
 
 {% endblock %}
