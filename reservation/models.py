@@ -14,3 +14,10 @@ class Reservation(models.Model):
     ]
     room_type = models.CharField(max_length=20, choices=ROOM_CHOICES)
     additional_wishes = models.TextField(blank=True)
+
+class RoomCount(models.Model):
+    room_type = models.CharField(max_length=20, unique=True, choices=Reservation.ROOM_CHOICES)
+    quantity = models.PositiveIntegerField(default=1)
+
+    def __str__(self):
+        return f"{self.room_type} ({self.quantity})"
