@@ -11,7 +11,7 @@
     <form method="post">
         {% csrf_token %}
         <label for="name_surname">Imię i nazwisko:</label>
-        <input type="text" name="name_surname" required />
+        <input type="text" name="name_surname" value="{{ form.name_surname.value|default:'' }}" required />
         {% if form.name_surname.errors %}
         <div class="error">
             {{ form.name_surname.errors.0 }}
@@ -19,7 +19,7 @@
         {% endif %}
 
         <label for="email">E-mail:</label>
-        <input type="email" name="email" required />
+        <input type="email" name="email" value="{{ form.email.value|default:'' }}" required />
         {% if form.email.errors %}
         <div class="error">
             {{ form.email.errors.0 }}
@@ -27,7 +27,7 @@
         {% endif %}
 
         <label for="arrival_date">Data przyjazdu:</label>
-        <input type="date" name="arrival_date" required />
+        <input type="date" name="arrival_date" value="{{ form.arrival_date.value|default:'' }}" required />
         {% if form.arrival_date.errors %}
         <div class="error">
             {{ form.arrival_date.errors.0 }}
@@ -35,7 +35,7 @@
         {% endif %}
 
         <label for="departure_date">Data wyjazdu:</label>
-        <input type="date" name="departure_date" required />
+        <input type="date" name="departure_date" value="{{ form.departure_date.value|default:'' }}" required />
         {% if form.departure_date.errors %}
         <div class="error">
             {{ form.departure_date.errors.0 }}
@@ -56,14 +56,14 @@
         {% endif %}
 
         <label for="additional_wishes">Dodatkowe życzenia:</label>
-        <textarea name="additional_wishes" rows="10"></textarea>
+        <textarea name="additional_wishes" rows="10">{{ form.additional_wishes.value|default:'' }}</textarea>
         {% if form.additional_wishes.errors %}
         <div class="error">
             {{ form.additional_wishes.errors.0 }}
         </div>
         {% endif %}
 
-        <button type="submit">Zarezerwuj</button>
+        <button type="submit">Przejdź do płatności - w budowie</button>
     </form>
     {% if messages %}
     {% for message in messages %}
