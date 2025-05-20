@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/room_detail' %}">
+{% endblock %}
+
+{% block content %}
+<div class="room-detail">
+    <h1>{{ room.title }}</h1>
+    <img src="{% static room.image %}" alt="{{ room.title }}">
+    <p>{{ room.description }}</p>
+</div>
+{% endblock %}
