@@ -1,0 +1,32 @@
+.room-detail {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.room-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.room-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.room-detail p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+}

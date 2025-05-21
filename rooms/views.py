@@ -9,4 +9,4 @@ def room_detail(request, room_type):
     room = ROOM_INFO
     if not room:
         raise Http404("Nie znaleziono takiego pokoju.")
-    return render(request, "rooms/room_detail.html", {"room": room})
+    return render(request, "rooms/room_detail.html", {"room": room.get(room_type)})
