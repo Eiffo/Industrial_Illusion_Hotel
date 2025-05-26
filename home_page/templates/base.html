@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -18,23 +19,34 @@
         <nav class="navbar">
             <a href="{% url 'home_page' %}" class="logo">Industrial Illusion</a>
             <ul class="nav-links">
-                <li><a href="{% url 'home_page' %}">Strona główna</a></li>
-                <li><a href="{% url 'reservation' %}">Rezerwacja</a></li>
-                <li><a href="{% url 'rooms' %}">Pokoje</a></li>
-                <li><a href="{% url 'contact' %}">Kontakt</a></li>
+                <li><a href="{% url 'home_page' %}">{% trans "Strona główna" %}</a></li>
+                <li><a href="{% url 'reservation' %}">{% trans "Rezerwacja" %}</a></li>
+                <li><a href="{% url 'rooms' %}">{% trans "Pokoje" %}</a></li>
+                <li><a href="{% url 'contact' %}">{% trans "Kontakt" %}</a></li>
+                <!-- 
+                <form action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <select name="language" class="language-switcher" onchange="this.form.submit()">
+                        <option value="pl">PL</option>
+                        <option value="en">EN</option>
+                    </select>
+                    <input type="hidden" name="next" value="{{ request.get_full_path }}">
+                </form>
+            -->
+
             </ul>
         </nav>
     </header>
 
     <main>
         {% block content %}
-        <!-- Zawartość konkretnej strony -->
+        <!-- The content of a specific page -->
         {% endblock %}
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Hotel Industrial Illusion. Wszelkie prawa zastrzeżone.</p>
-        <p><a href="{% url 'contact' %}">Skontaktuj się z nami</a></p>
+        <p>&copy; {% trans "2025 Hotel Industrial Illusion. Wszelkie prawa zastrzeżone." %}</p>
+        <p><a href="{% url 'contact' %}">{% trans "Skontaktuj się z nami" %}</a></p>
     </footer>
 
 </body>

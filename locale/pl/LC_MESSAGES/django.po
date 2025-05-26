@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-26 12:35+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: Industrial_Illusion/settings.py:120
+msgid "Polish"
+msgstr "polski"
+
+#: Industrial_Illusion/settings.py:121
+msgid "English"
+msgstr "angielski"
+
+#: contact/templates/contact/contact.html:11 home_page/templates/base.html:38
+msgid "Skontaktuj się z nami"
+msgstr ""
+
+#: contact/templates/contact/contact.html:12
+msgid "Masz pytanie? Napisz do nas – odpowiemy tak szybko, jak to możliwe!"
+msgstr ""
+
+#: contact/templates/contact/contact.html:17
+msgid " Twoje imię"
+msgstr ""
+
+#: contact/templates/contact/contact.html:18
+msgid " Twój e-mail"
+msgstr ""
+
+#: contact/templates/contact/contact.html:19
+msgid " Wiadomość"
+msgstr ""
+
+#: contact/templates/contact/contact.html:20
+msgid "Wyślij"
+msgstr ""
+
+#: contact/templates/contact/contact.html:24
+msgid "Dane kontaktowe"
+msgstr ""
+
+#: contact/templates/contact/contact.html:25
+msgid "Adres"
+msgstr ""
+
+#: contact/templates/contact/contact.html:25
+msgid "ul. Spacerowa 12, 38-610 Polańczyk"
+msgstr ""
+
+#: contact/templates/contact/contact.html:26
+msgid "Telefon"
+msgstr ""
+
+#: home_page/templates/base.html:22
+msgid "Strona główna"
+msgstr ""
+
+#: home_page/templates/base.html:23
+msgid "Rezerwacja"
+msgstr ""
+
+#: home_page/templates/base.html:24
+msgid "Pokoje"
+msgstr ""
+
+#: home_page/templates/base.html:25
+msgid "Kontakt"
+msgstr ""
+
+#: home_page/templates/base.html:37
+msgid "2025 Hotel Industrial Illusion. Wszelkie prawa zastrzeżone."
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:12
+msgid "Witamy w Hotelu Industrial Illusion"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:13
+msgid "Twój idealny wypoczynek zaczyna się tutaj"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:14
+msgid "Zarezerwuj teraz"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:19
+msgid "Nasze Pokoje"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:22
+#: reservation/templates/reservation/reservation.html:47
+#: rooms/templates/rooms/rooms.html:17
+msgid "Pokój Standardowy"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:23
+msgid "Idealny dla jednej osoby lub pary."
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:26
+#: reservation/templates/reservation/reservation.html:48
+#: rooms/templates/rooms/rooms.html:25
+msgid "Pokój Deluxe"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:27
+msgid "Więcej przestrzeni, piękny widok."
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:30
+#: reservation/templates/reservation/reservation.html:49
+#: rooms/templates/rooms/rooms.html:33
+msgid "Apartament"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:31
+msgid "Luksus i wygoda z oddzielną sypialnią i salonem."
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:35
+msgid "Najwyższy standard, panoramiczny widok i ekskluzywne wnętrze."
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:44
+msgid "Śniadania w cenie"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:45
+msgid "Całodobowa recepcja"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:46
+msgid "Transport z lotniska"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:51
+msgid "Opinie Gości"
+msgstr ""
+
+#: home_page/templates/home_page/home_page.html:53
+msgid "„Wspaniała obsługa i piękne wnętrza. Na pewno wrócimy!”"
+msgstr ""
+
+#: reservation/templates/reservation/reservation.html:10
+msgid "Rezerwuj swój pobyt"
+msgstr ""
+
+#: reservation/templates/reservation/reservation.html:13
+msgid "Imię i nazwisko"
+msgstr ""
+
+#: reservation/templates/reservation/reservation.html:29
+msgid "Data przyjazdu"
+msgstr ""
+
+#: reservation/templates/reservation/reservation.html:37
+msgid "Data wyjazdu"
+msgstr ""
+
+#: reservation/templates/reservation/reservation.html:45
+msgid "Rodzaj pokoju"
+msgstr ""
+
+#: reservation/templates/reservation/reservation.html:58
+msgid "Dodatkowe życzenia"
+msgstr ""
+
+#: reservation/templates/reservation/reservation.html:66
+msgid "Przejdź do płatności - w budowie"
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:10
+msgid "Nasze pokoje"
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:11
+msgid "Wybierz idealny pokój dopasowany do Twoich potrzeb."
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:18
+msgid "Komfortowe wyposażenie, idealny dla jednej lub dwóch osób."
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:26
+msgid "Więcej przestrzeni i udogodnień — dla gości ceniących wygodę."
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:34
+msgid "Luksusowe wnętrza i oddzielna strefa wypoczynkowa."
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:42
+msgid "Najwyższy standard, ogromna przestrzeń i wiele atrakcji."
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:47
+msgid "Godziny zameldowań i wymeldowań"
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:48
+msgid "Zameldowanie"
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:48
+msgid "od 14:00"
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:49
+msgid "Wymeldowanie"
+msgstr ""
+
+#: rooms/templates/rooms/rooms.html:49
+msgid "do 11:00"
+msgstr ""

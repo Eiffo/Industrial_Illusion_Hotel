@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
@@ -8,22 +9,22 @@
 {% block content %}
 <section class="contact-section">
     <div class="contact-container">
-        <h2>Skontaktuj się z nami</h2>
-        <p>Masz pytanie? Napisz do nas – odpowiemy tak szybko, jak to możliwe!</p>
+        <h2>{% trans "Skontaktuj się z nami" %}</h2>
+        <p>{% trans "Masz pytanie? Napisz do nas – odpowiemy tak szybko, jak to możliwe!" %}</p>
 
         <div class="contact-content">
             <form class="contact-form" method="post">
                 {% csrf_token %}
-                <input type="text" name="name" placeholder="Twoje imię" required>
-                <input type="email" name="email" placeholder="Twój e-mail" required>
-                <textarea name="message" rows="15" placeholder="Wiadomość" required></textarea>
-                <button type="submit" class="btn">Wyślij</button>
+                <input type="text" name="name" placeholder="{% trans 'Twoje imię' %}" required>
+                <input type="email" name="email" placeholder="{% trans 'Twój e-mail' %}" required>
+                <textarea name="message" rows="15" placeholder="{% trans 'Wiadomość' %}" required></textarea>
+                <button type="submit" class="btn">{% trans "Wyślij" %}</button>
             </form>
 
             <div class="contact-info">
-                <h3>Dane kontaktowe</h3>
-                <p><strong>Adres:</strong> ul. Spacerowa 12, 38-610 Polańczyk</p>
-                <p><strong>Telefon:</strong> +48 123 456 789</p>
+                <h3>{% trans "Dane kontaktowe" %}</h3>
+                <p><strong>{% trans "Adres" %}:</strong> {% trans "ul. Spacerowa 12, 38-610 Polańczyk" %}</p>
+                <p><strong>{% trans "Telefon" %}:</strong> +48 123 456 789</p>
                 <p><strong>Email:</strong> kontakt@industrialillusion.pl</p>
             </div>
         </div>

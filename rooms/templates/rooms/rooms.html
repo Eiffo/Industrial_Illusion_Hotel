@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/rooms.css' %}" />
@@ -7,31 +8,31 @@
 
 {% block content %}
 <section class="rooms-section">
-    <h1>Nasze pokoje</h1>
-    <p>Wybierz idealny pokój dopasowany do Twoich potrzeb.</p>
+    <h1>{% trans "Nasze Pokoje" %}</h1>
+    <p>{% trans "Wybierz idealny pokój dopasowany do Twoich potrzeb." %}</p>
 
     <div class="room-cards">
         <div class="room-card">
             <a href="{% url 'room_detail' room_type='standard' %}">
                 <img src="{% static 'img/standard_room.jpg' %}" alt="Pokój standardowy">
-                <h2>Pokój Standardowy</h2>
-                <p>Komfortowe wyposażenie, idealny dla jednej lub dwóch osób.</p>
+                <h2>{% trans "Pokój Standardowy" %}</h2>
+                <p>{% trans "Komfortowe wyposażenie, idealny dla jednej lub dwóch osób." %}</p>
             </a>
         </div>
 
         <div class="room-card">
             <a href="{% url 'room_detail' room_type='standard' %}">
                 <img src="{% static 'img/deluxe_room.jpg' %}" alt="Pokój deluxe">
-                <h2>Pokój Deluxe</h2>
-                <p>Więcej przestrzeni i udogodnień — dla gości ceniących wygodę.</p>
+                <h2>{% trans "Pokój Deluxe" %}</h2>
+                <p>{% trans "Więcej przestrzeni i udogodnień — dla gości ceniących wygodę." %}</p>
             </a>
         </div>
 
         <div class="room-card">
             <a href="{% url 'room_detail' room_type='suite' %}">
                 <img src="{% static 'img/suite_room.jpg' %}" alt="Apartament">
-                <h2>Apartament</h2>
-                <p>Luksusowe wnętrza i oddzielna strefa wypoczynkowa.</p>
+                <h2>{% trans "Apartament" %}</h2>
+                <p>{% trans "Luksusowe wnętrza i oddzielna strefa wypoczynkowa." %}</p>
             </a>
         </div>
 
@@ -39,14 +40,14 @@
             <a href="{% url 'room_detail' room_type='penthouse' %}">
                 <img src="{% static 'img/penthouse_room1.jpg' %}" alt="Penthouse">
                 <h2>Penthouse</h2>
-                <p>Najwyższy standard, ogromna przestrzeń i wiele atrakcji.</p>
+                <p>{% trans "Najwyższy standard, ogromna przestrzeń i wiele atrakcji." %}</p>
             </a>
         </div>
     </div>
 
-    <h3>Godziny zameldowań i wymeldowań</h3>
-    <p1><strong>Zameldowanie:</strong> od 14:00</p1>
-    <p1><strong>Wymeldowanie:</strong> do 11:00</p1>
+    <h3>{% trans "Godziny zameldowań i wymeldowań" %}</h3>
+    <p1><strong>{% trans "Zameldowanie" %}:</strong> {% trans "od 14:00" %}</p1>
+    <p1><strong>{% trans "Wymeldowanie" %}:</strong> {% trans "do 11:00" %}</p1>
 
 </section>
 {% endblock %}

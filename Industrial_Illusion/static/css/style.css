@@ -48,6 +48,22 @@ main {
     color: #f5a623;
 }
 
+/* Language selector */
+.language-switcher {
+    background-color: #1a1a1a;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-switcher:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #f5a62380;
+}
+
 /* Footer */
 .footer {
     background: #333;
