@@ -23,17 +23,23 @@
                 <li><a href="{% url 'reservation' %}">{% trans "Rezerwacja" %}</a></li>
                 <li><a href="{% url 'rooms' %}">{% trans "Pokoje" %}</a></li>
                 <li><a href="{% url 'contact' %}">{% trans "Kontakt" %}</a></li>
-                <!-- 
-                <form action="{% url 'set_language' %}" method="post">
-                    {% csrf_token %}
-                    <select name="language" class="language-switcher" onchange="this.form.submit()">
-                        <option value="pl">PL</option>
-                        <option value="en">EN</option>
-                    </select>
-                    <input type="hidden" name="next" value="{{ request.get_full_path }}">
-                </form>
-            -->
+                
+                <li class="dropdown">
+                    <a href="#" class="nav-link">{% trans "Język" %} ▾</a>
+                    <ul class="dropdown-menu">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
 
+                        {% for lang in languages %}
+                            <li>
+                                <a class="dropdown-item" href="/{{ lang.code }}/">
+                                    {{ lang.code|upper }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>

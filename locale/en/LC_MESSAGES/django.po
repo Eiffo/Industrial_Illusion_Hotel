@@ -78,6 +78,10 @@ msgstr "Rooms"
 msgid "Kontakt"
 msgstr "Contact"
 
+#: home_page/templates/base.html: 28
+msgid "Język"
+msgstr "Language"
+
 #: home_page/templates/base.html:37
 msgid "2025 Hotel Industrial Illusion. Wszelkie prawa zastrzeżone."
 msgstr "2025 Hotel Industrial Illusion. All rights reserved."
