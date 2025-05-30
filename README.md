@@ -21,8 +21,8 @@ Project is created with:
 ## Setup
 1. **Clone the repository** to your local environment:
    ```bash
-   git clone https://github.com/YourRepository.git
-   cd YourRepository
+   git clone https://github.com/Eiffo/Industrial_Illusion_Hotel
+   cd Industrial_Illusion_Hotel
    ```
 2. Create a virtual environment (optional):
    ```
@@ -44,7 +44,7 @@ Project is created with:
    ```
 4. Add .env file with:
    ```
-   SECRET_KEY="your_secret_key_here"
+   SECRET_KEY="your_secret_key"
    DEBUG=True
    ```
    To generate your SECRET_KEY run this command:
@@ -53,6 +53,7 @@ Project is created with:
    ```
 5. Start project locally:
    ```
+   python manage.py migrate
    python manage.py runserver
    ```
    The server will be available at: http://127.0.0.1:8000/
