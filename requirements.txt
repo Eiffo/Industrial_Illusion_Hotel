@@ -1,4 +1,2 @@
-python>=3.13.3
 django>=5.1.8
 python-dotenv>=1.1.0
-gettext>=0.25
