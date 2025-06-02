@@ -64,7 +64,8 @@
         </div>
         {% endif %}
 
-        <button type="submit">{% trans "Przejdź do płatności - w budowie" %}</button>
+        <button type="submit"><a href="{% url 'payment' %}">{% trans "Kontynuuj -  w budowie" %}</a></button>
+
     </form>
     {% if messages %}
     {% for message in messages %}

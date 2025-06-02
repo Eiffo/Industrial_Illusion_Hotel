@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/payment.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>{% trans "Podsumowanie rezerwacji" %}</h2>
+
+    <div class="summary">
+        <p><strong>{% trans "Imię i nazwisko" %}:</strong> {{ name_surname }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>{% trans "Data przyjazdu" %}:</strong> {{ arrival_date }}</p>
+        <p><strong>{% trans "Data wyjazdu" %}:</strong> {{ departure_date }}</p>
+        <p><strong>{% trans "Rodzaj pokoju" %}:</strong> {{ room_type|title }}</p>
+        {% if additional_wishes %}
+        <p><strong>{% trans "Dodatkowe życzenia" %}:</strong> {{ additional_wishes }}</p>
+        {% endif %}
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="payment-options">
+            <label><input type="radio" name="payment_method" value="cash" required> {% trans "Płatność na miejscu" %}</label>
+            <label><input type="radio" name="payment_method" value="blik"> {% trans "Przelew BLIK" %}</label>
+        </div>
+        <button type="submit">{% trans "Potwierdź rezerwację" %}</button>
+    </form>
+</div>
+{% endblock %}

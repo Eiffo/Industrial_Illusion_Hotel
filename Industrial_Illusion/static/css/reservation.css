@@ -45,6 +45,11 @@ button {
     cursor: pointer;
 }
 
+button a {
+    color: white;
+    text-decoration: none;
+}
+
 button:hover {
     background-color: #444;
 }

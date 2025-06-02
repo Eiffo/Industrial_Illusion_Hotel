@@ -208,9 +208,9 @@ msgstr "Room type"
 msgid "Dodatkowe życzenia"
 msgstr "Additional requests"
 
-#: reservation/templates/reservation/reservation.html:66
-msgid "Przejdź do płatności - w budowie"
-msgstr "Proceed to payment – under construction"
+#: reservation/templates/reservation/reservation.html:67
+msgid "Kontynuuj -  w budowie"
+msgstr "Proceed - Work in progress"
 
 #: rooms/templates/rooms/rooms.html:11
 msgid "Wybierz idealny pokój dopasowany do Twoich potrzeb."
