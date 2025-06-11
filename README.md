@@ -42,16 +42,28 @@ Project is created with:
    ```
    pip install -r requirements.txt
    ```
-4. Add .env file with:
+4. Add ".env" file with:
    ```
    SECRET_KEY="your_secret_key"
    DEBUG=True
    ```
+   * To create .env file on:
+      - Windows:
+	     ```
+	     echo SECRET_KEY="your_secret_key" > .env
+	     echo DEBUG=True >> .env
+	     ```
+     - Linux/MacOS:
+	     ```
+	     echo 'SECRET_KEY="your_secret_key"' > .env
+	     echo 'DEBUG=True' >> .env
+	     ```
+   
    To generate your SECRET_KEY run this command:
    ```bash
    python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
    ```
-5. Start project locally:
+6. Start project locally:
    ```
    python manage.py migrate
    python manage.py runserver
@@ -61,15 +73,15 @@ Project is created with:
 
 ## Todo
 - [ ] Home Page:
-    - [ ] Language selection: 
+    - [x] Language selection: 
         Choose between English and Polish.
 
     Pages:
-    - [ ] Rooms (Room presentation): 
+    - [x] Rooms (Room presentation): 
         List of rooms with description, price.
-    - [ ] Reservation (Implement online reservation system): 
+    - [x] Reservation (Implement online reservation system): 
         Integration with payment system module.
-    - [ ] Information (Hotel information): 
+    - [x] Information (Hotel information): 
         Localization of hotel, history, contact.
     - [ ] Reviews (Optional): 
         Guest reviews (To add a review, a reservation must be made first. You will need to provide your name and reservation number).
