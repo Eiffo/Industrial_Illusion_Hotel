@@ -8,11 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2025-05-26 12:35+0200\n"
-=======
-"POT-Creation-Date: 2025-08-17 14:31+0200\n"
->>>>>>> 84ec26b (Language changes)
+"POT-Creation-Date: 2025-08-17 15:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,49 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-<<<<<<< HEAD
-#: Industrial_Illusion/settings.py:120
-msgid "Polish"
-msgstr "polish"
-
-#: Industrial_Illusion/settings.py:121
-msgid "English"
-msgstr "english"
-
-#: contact/templates/contact/contact.html:12
-msgid "Masz pytanie? Napisz do nas – odpowiemy tak szybko, jak to możliwe!"
-msgstr "Have a question? Write to us – we’ll respond as soon as possible!"
-
-#: contact/templates/contact/contact.html:17
-msgid "Twoje imię"
-msgstr "Your name"
-
-#: contact/templates/contact/contact.html:18
-msgid "Twój e-mail"
-msgstr "Your email"
-
-#: contact/templates/contact/contact.html:19
-msgid "Wiadomość"
-msgstr "Message"
-
-#: contact/templates/contact/contact.html:20
-msgid "Wyślij"
-msgstr "Send"
-
-#: contact/templates/contact/contact.html:24
-msgid "Dane kontaktowe"
-msgstr "Contact details"
-
-#: contact/templates/contact/contact.html:25
-msgid "Adres"
-msgstr "Address"
-
-#: contact/templates/contact/contact.html:25
-msgid "ul. Spacerowa 12, 38-610 Polańczyk"
-msgstr "12 Spacerowa St., 38-610 Polańczyk"
-
-#: contact/templates/contact/contact.html:26
-=======
 #: Industrial_Illusion/settings.py:121
 msgid "Polish"
 msgstr "polish"
@@ -110,9 +63,12 @@ msgid "ul. Spacerowa 12, 38-610 Polańczyk"
 msgstr "12 Spacerowa St., 38-610 Polańczyk"
 
 #: contact/templates/contact/contact.html:27
->>>>>>> 84ec26b (Language changes)
 msgid "Telefon"
 msgstr "Phone"
+
+#: contact/views.py:12
+msgid "Wiadomość została pomyślnie wysłana!"
+msgstr "The message has been sent successfully!"
 
 #: home_page/templates/base.html:22
 msgid "Strona główna"
@@ -130,20 +86,6 @@ msgstr "Rooms"
 msgid "Kontakt"
 msgstr "Contact"
 
-<<<<<<< HEAD
-#: home_page/templates/base.html: 28
-msgid "Język"
-msgstr "Language"
-
-#: home_page/templates/base.html:37
-msgid "2025 Hotel Industrial Illusion. Wszelkie prawa zastrzeżone."
-msgstr "2025 Hotel Industrial Illusion. All rights reserved."
-
-#: contact/templates/contact/contact.html:11 home_page/templates/base.html:38
-msgid "Skontaktuj się z nami"
-msgstr "Contact us"
-
-=======
 #: home_page/templates/base.html:28
 msgid "Język"
 msgstr "Language"
@@ -152,7 +94,6 @@ msgstr "Language"
 msgid "2025 Hotel Industrial Illusion. Wszelkie prawa zastrzeżone."
 msgstr "2025 Hotel Industrial Illusion. All rights reserved."
 
->>>>>>> 84ec26b (Language changes)
 #: home_page/templates/home_page/home_page.html:12
 msgid "Witamy w Hotelu Industrial Illusion"
 msgstr "Welcome to Hotel Industrial Illusion"
@@ -166,23 +107,13 @@ msgid "Zarezerwuj teraz"
 msgstr "Book now"
 
 #: home_page/templates/home_page/home_page.html:19
-<<<<<<< HEAD
-#: rooms/templates/rooms/rooms.html:10
-=======
 #: rooms/templates/rooms/rooms.html:11
->>>>>>> 84ec26b (Language changes)
 msgid "Nasze Pokoje"
 msgstr "Our Rooms"
 
 #: home_page/templates/home_page/home_page.html:22
-<<<<<<< HEAD
-#: reservation/templates/reservation/reservation.html:47
-#: rooms/templates/rooms/rooms.html:17
-#: rooms/room_data.py:5
-=======
 #: reservation/templates/reservation/reservation.html:48 rooms/room_data.py:5
 #: rooms/templates/rooms/rooms.html:18
->>>>>>> 84ec26b (Language changes)
 msgid "Pokój Standardowy"
 msgstr "Standard Room"
 
@@ -191,14 +122,8 @@ msgid "Idealny dla jednej osoby lub pary."
 msgstr "Perfect for one person or a couple."
 
 #: home_page/templates/home_page/home_page.html:26
-<<<<<<< HEAD
-#: reservation/templates/reservation/reservation.html:48
-#: rooms/templates/rooms/rooms.html:25
-#: rooms/room_data.py:11
-=======
 #: reservation/templates/reservation/reservation.html:49 rooms/room_data.py:11
 #: rooms/templates/rooms/rooms.html:26
->>>>>>> 84ec26b (Language changes)
 msgid "Pokój Deluxe"
 msgstr "Deluxe Room"
 
@@ -207,14 +132,8 @@ msgid "Więcej przestrzeni, piękny widok."
 msgstr "More space, beautiful view."
 
 #: home_page/templates/home_page/home_page.html:30
-<<<<<<< HEAD
-#: reservation/templates/reservation/reservation.html:49
-#: rooms/templates/rooms/rooms.html:33
-#: rooms/room_data.py:17
-=======
 #: reservation/templates/reservation/reservation.html:50 rooms/room_data.py:17
 #: rooms/templates/rooms/rooms.html:34
->>>>>>> 84ec26b (Language changes)
 msgid "Apartament"
 msgstr "Apartment"
 
@@ -248,50 +167,6 @@ msgstr "Guest Reviews"
 
 #: home_page/templates/home_page/home_page.html:53
 msgid "„Wspaniała obsługa i piękne wnętrza. Na pewno wrócimy!”"
-<<<<<<< HEAD
-msgstr "“Wonderful service and beautiful interiors. We will definitely come back!”"
-
-#: rooms/room_data.py:7
-msgid "Ten przytulny pokój idealnie sprawdzi się dla jednej lub dwóch osób, oferując komfortowy wypoczynek w przystępnej cenie. Wyposażony w wygodne łóżko typu queen-size, nowoczesną łazienkę z prysznicem, telewizor LCD oraz bezpłatne Wi-Fi, zapewnia wszystko, czego potrzeba do relaksu po dniu zwiedzania lub pracy. Jasne wnętrze oraz stonowana kolorystyka tworzą ciepłą i przyjazną atmosferę, sprzyjającą wypoczynkowi."
-msgstr "This cozy room is perfect for one or two guests, offering comfortable accommodation at an affordable price. It features a comfortable queen-size bed, a modern bathroom with a shower, an LCD TV, and free Wi-Fi — everything you need to relax after a day of sightseeing or work. The bright interior and soft color palette create a warm, welcoming atmosphere ideal for rest."
-
-#: rooms/room_data.py:13
-msgid "Pokój Deluxe to doskonały wybór dla tych, którzy cenią sobie nieco więcej przestrzeni i elegancji. Pokój oferuje większy metraż, wygodne łóżko typu king-size, część wypoczynkową z fotelem, a także elegancką łazienkę z wanną i zestawem kosmetyków oraz alkocholi. Duże okna zapewniają mnóstwo naturalnego światła, a nowoczesne wnętrze zostało zaprojektowane z dbałością o każdy szczegół. Idealny zarówno dla par, jak i osób podróżujących służbowo."
-msgstr "The Deluxe Room is an excellent choice for those who value a bit more space and elegance. It offers a larger area, a comfortable king-size bed, a sitting area with an armchair, and a stylish bathroom with a bathtub and a set of cosmetics and alcohols. Large windows provide plenty of natural light, and the modern interior has been designed with attention to detail. Ideal for both couples and business travelers."
-
-#: rooms/room_data.py:19
-msgid "Nasze apartamenty to idealna przestrzeń dla rodzin lub gości szukających dłuższego pobytu z dodatkowym komfortem. Składają się z oddzielnej sypialni i salonu, aneksu kuchennego oraz przestronnej łazienki. Dzięki dużej przestrzeni i funkcjonalności zapewniają poczucie prywatności i domowej atmosfery. Każdy apartament urządzony jest w nowoczesnym stylu z elementami przytulnego designu, tworząc idealne miejsce do odpoczynku po intensywnym dniu."
-msgstr "Our apartments are the perfect space for families or guests seeking a longer stay with added comfort. They consist of a separate bedroom and living room, a kitchenette, and a spacious bathroom. Thanks to their generous space and functionality, they offer a sense of privacy and a homely atmosphere. Each apartment is decorated in a modern style with cozy design elements, creating an ideal place to unwind after a busy day."
-
-#: rooms/room_data.py:25
-msgid "Penthouse to nasza najbardziej ekskluzywna opcja zakwaterowania – luksusowy apartament na najwyższym piętrze z panoramicznym widokiem na góry. Oferuje przestronny salon, elegancką sypialnię, prywatny taras oraz designerską łazienkę z wanną wolnostojącą i prysznicem typu walk-in. Wysokiej klasy wykończenie, indywidualny system nagłośnienia i możliwość zamówienia obsługi pokojowej 24/7 sprawiają, że jest to idealna opcja dla najbardziej wymagających gości lub wyjątkowych okazji, takich jak rocznice czy wieczory panieńskie."
-msgstr "The Penthouse is our most exclusive accommodation option — a luxurious apartment on the top floor with panoramic mountain views. It features a spacious living room, an elegant bedroom, a private terrace, and a designer bathroom with a freestanding bathtub and walk-in shower. High-end finishes, a personalized sound system, and 24/7 room service make it the perfect choice for the most discerning guests or special occasions like anniversaries or bachelorette parties."
-
-#: reservation/templates/reservation/reservation.html:10
-msgid "Rezerwuj swój pobyt"
-msgstr "Book your stay"
-
-#: reservation/templates/reservation/reservation.html:13
-msgid "Imię i nazwisko"
-msgstr "Full name"
-
-#: reservation/templates/reservation/reservation.html:29
-msgid "Data przyjazdu"
-msgstr "Check-in date"
-
-#: reservation/templates/reservation/reservation.html:37
-msgid "Data wyjazdu"
-msgstr "Check-out date"
-
-#: reservation/templates/reservation/reservation.html:45
-msgid "Rodzaj pokoju"
-msgstr "Room type"
-
-#: reservation/templates/reservation/reservation.html:58
-msgid "Dodatkowe życzenia"
-msgstr "Additional requests"
-
-=======
 msgstr ""
 "“Wonderful service and beautiful interiors. We will definitely come back!”"
 
@@ -305,11 +180,16 @@ msgstr "Invalid email."
 
 #: reservation/forms.py:36
 msgid "Nie można znaleźć informacji o dostępności pokoi."
-msgstr "Room availability information cannot be found."
+msgstr "Room availability information could not be found."
 
 #: reservation/forms.py:54
-msgid "Brak dostępnych pokoi typu {room_type}. Najbliższy wolny termin to: {next_available_date}."
+#, python-brace-format
+msgid ""
+"Brak dostępnych pokoi typu {room_type}. Najbliższy wolny termin to: "
+"{next_available_date}."
 msgstr ""
+"No rooms of type {room_type} are available. The next available date is: "
+"{next_available_date}."
 
 #: reservation/forms.py:58
 msgid "Data zameldowania nie może być wcześniejsza niż dzisiaj."
@@ -370,55 +250,13 @@ msgstr ""
 msgid "Rezerwuj swój pobyt"
 msgstr "Book your stay"
 
->>>>>>> 84ec26b (Language changes)
 #: reservation/templates/reservation/reservation.html:67
 msgid "Kontynuuj -  w budowie"
 msgstr "Proceed - Work in progress"
 
-<<<<<<< HEAD
-#: rooms/templates/rooms/rooms.html:11
-msgid "Wybierz idealny pokój dopasowany do Twoich potrzeb."
-msgstr "Choose the perfect room tailored to your needs."
-
-#: rooms/templates/rooms/rooms.html:18
-msgid "Komfortowe wyposażenie, idealny dla jednej lub dwóch osób."
-msgstr "Comfortable amenities, perfect for one or two guests."
-
-#: rooms/templates/rooms/rooms.html:26
-msgid "Więcej przestrzeni i udogodnień — dla gości ceniących wygodę."
-msgstr "More space and amenities — for guests who value comfort."
-
-#: rooms/templates/rooms/rooms.html:34
-msgid "Luksusowe wnętrza i oddzielna strefa wypoczynkowa."
-msgstr "Luxurious interiors and a separate lounge area."
-
-#: rooms/templates/rooms/rooms.html:42
-msgid "Najwyższy standard, ogromna przestrzeń i wiele atrakcji."
-msgstr "Top standard, vast space, and many attractions."
-
-#: rooms/templates/rooms/rooms.html:47
-msgid "Godziny zameldowań i wymeldowań"
-msgstr "Check-in and check-out times"
-
-#: rooms/templates/rooms/rooms.html:48
-msgid "Zameldowanie"
-msgstr "Check-in"
-
-#: rooms/templates/rooms/rooms.html:48
-msgid "od 14:00"
-msgstr "from 14:00"
-
-#: rooms/templates/rooms/rooms.html:49
-msgid "Wymeldowanie"
-msgstr "Check-out"
-
-#: rooms/templates/rooms/rooms.html:49
-msgid "do 11:00"
-msgstr "until 11:00"
-=======
 #: reservation/views.py:41
-msgid "Brakuje danych dotyczących rezerwacji – proszę uzupełnić formularz."
-msgstr "The reservation details are missing – please fill in the form."
+msgid "Brakuje danych rezerwacji. Wypełnij formularz."
+msgstr "Reservation data is missing. Please fill out the form."
 
 #: rooms/room_data.py:7
 msgid ""
@@ -526,6 +364,10 @@ msgstr "Check-out"
 #: rooms/templates/rooms/rooms.html:50
 msgid "do 11:00"
 msgstr "until 11:00"
+
+#: rooms/views.py:12
+msgid "Nie znaleziono takiego pokoju."
+msgstr "No such room was found."
 
 #: venv/Lib/site-packages/django/contrib/messages/apps.py:16
 msgid "Messages"
@@ -1750,4 +1592,3 @@ msgstr ""
 #: venv/Lib/site-packages/django/views/templates/default_urlconf.html:236
 msgid "Connect, get help, or contribute"
 msgstr ""
->>>>>>> 84ec26b (Language changes)
