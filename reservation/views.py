@@ -1,7 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import ReservationUpload
+<<<<<<< HEAD
 from django.utils.translation import gettext_lazy as _
+=======
+from django.utils.translation import gettext as _
+>>>>>>> 84ec26b (Language changes)
 
 def reservation(request):
     if request.method == "POST":
@@ -38,7 +42,11 @@ def payment(request):
 
     # Check if data exist
     if not all(context.get(field) for field in required_fields):
+<<<<<<< HEAD
         messages.error(request, "Brakuje danych rezerwacji. Wypełnij formularz.")
+=======
+        messages.error(request, _("Brakuje danych dotyczących rezerwacji – proszę uzupełnić formularz."))
+>>>>>>> 84ec26b (Language changes)
         return redirect("reservation")
 
     return render(request, "reservation/payment.html", context)

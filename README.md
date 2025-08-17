@@ -75,6 +75,11 @@ Project is created with:
 - [ ] Home Page:
     - [x] Language selection: 
         Choose between English and Polish.
+<<<<<<< HEAD
+=======
+    - [ ] Translate everything: 
+        Translete everything to English.
+>>>>>>> 84ec26b (Language changes)
 
     Pages:
     - [x] Rooms (Room presentation): 
@@ -90,7 +95,11 @@ Project is created with:
 
 - [ ] Add payment system: 
     Implement payment system - maybe create bank system, and connect between them.
+<<<<<<< HEAD
 - [ ] Admin (Admin panel): 
+=======
+- [x] Admin (Admin panel): 
+>>>>>>> 84ec26b (Language changes)
     Admin panel for managing reservations and content.
 - [ ] Security (for later): 
     Improve security.
